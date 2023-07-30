@@ -5,6 +5,23 @@ services:
     build:
       context: postgres
       dockerfile: Dockerfile
-
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -d dagster -U dagster"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     ports:
       - "5432:5432"
+
+  dagster-webserver:
+    build:
+      context: dagster
+      dockerfile: Dockerfile
+    entrypoint: ["dagster-webserver", "-h", "0.0.0.0", "-p", "3000"]
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./dagster/pipeline:/opt/dagster/app/pipeline

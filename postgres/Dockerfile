@@ -1,4 +1,5 @@
 FROM postgres
 
+ENV POSTGRES_USER=dagster
 ENV POSTGRES_PASSWORD=dagster
 ENV POSTGRES_DB=dagster
