@@ -2,5 +2,3 @@ FROM postgres
 
 ENV POSTGRES_PASSWORD=dagster
 ENV POSTGRES_DB=dagster
-
-EXPOSE 5432
