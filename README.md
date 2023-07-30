@@ -57,12 +57,3 @@ If you would like to contribute to this project, feel free to submit a pull requ
 ## License
 
 This project is licensed under the [MIT License](LICENSE), which allows you to use, modify, and distribute the code for both commercial and non-commercial purposes.
-
-## Contact
-
-For any questions or concerns regarding the data ingestion pipeline or this repository, please feel free to contact us at contact@example.com.
-
----
-**Note**: Make sure to replace `your_username`, `your_repository`, and `contact@example.com` with appropriate values specific to your project.
-
-With this README, users will be able to set up and run the data ingestion pipeline to fetch and store Trip Record Data from the TLC in New York using Dagster and AWS S3. The section in the wiki emphasizes the importance of updating the `.env` file with AWS credentials to enable secure data transfer to S3. Remember to always keep sensitive information, such as AWS credentials, confidential and avoid committing them to version control.
