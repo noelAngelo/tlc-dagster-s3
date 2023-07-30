@@ -2,7 +2,7 @@
 
 This repository contains a data ingestion pipeline that fetches Trip Record Data from the Taxi and Limousine Commission (TLC) in New York, processes it using Dagster, and stores it in AWS S3. The pipeline is designed to automate the data ingestion process, making it easy to collect and store the data for further analysis and use.
 
-
+![Workflow](https://github.com/noelAngelo/tlc-dagster-s3/blob/main/assets/tlc-dagster-s3.png?raw=true)
 
 ## Prerequisites
 
