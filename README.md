@@ -19,7 +19,7 @@ Follow the steps below to set up the data ingestion pipeline:
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/your_username/your_repository.git](https://github.com/noelAngelo/tlc-dagster-s3.git
+git clone https://github.com/noelAngelo/tlc-dagster-s3.git
 cd your_repository
 ```
 
